@@ -1,6 +1,8 @@
-<img width="1280" alt="API_Stock_Prediction_Home_Page" src="https://github.com/SathyaV99/Sto_ck_Ma_r_ket_A_na_lysis_U_S/assets/88423149/6595f795-7a7c-4ce1-a52c-81322fc207e3">The API Driven Periodic Stock Market Prediction Application has 4 tabs,
+THE URL FOR THE US STOCK MARKET PREDICTION APPLICATION:
 
 https://sathyav99.shinyapps.io/API_US_stock_prediction/
+
+The API Driven Periodic Stock Market Prediction Application has 4 tabs,
 
 i) Home Tab
 ii) Data Tab
