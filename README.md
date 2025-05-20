@@ -6,29 +6,29 @@ This Shiny application fetches real-time stock data via **Yahoo Finance API**, p
 
 ---
 
-## 🔧 Key Features
+## Key Features
 
 The app is divided into four tabs:
 
-### 1️⃣ Home Tab  
+### 1. Home Tab  
 - Provides a brief intro.
 - Walkthrough on how the app works.
 - Explains how the model predicts using API and pretrained weights.
 
 ---
 
-### 2️⃣ Data Tab  
+### 2. Data Tab  
 Lets users explore **historical datasets**.
 
 - `Dataset`: View raw stock data (Open, Close, Volume, etc.).
 - `Summary`: Get statistics (mean, median, standard deviation, etc.).
 - `Structure`: See the structure (columns, data types).
 
-💡 Supports: `AAPL`, `AMZN`, `GOOGL`, `NVDA`, `MSFT`
+Supports: `AAPL`, `AMZN`, `GOOGL`, `NVDA`, `MSFT`
 
 ---
 
-### 3️⃣ Visualization Tab  
+### 3. Visualization Tab  
 Visualize stock behavior over the **last 30 days** using:
 
 - `Histogram`: Volume distribution  
@@ -38,7 +38,7 @@ Visualize stock behavior over the **last 30 days** using:
 
 ---
 
-### 4️⃣ Prediction Tab  
+### 4. Prediction Tab  
 - Runs linear regression predictions using recent data.
 - Predicts next 5 days' closing prices.
 - Shows comparison between **actual vs. predicted**.
@@ -46,7 +46,7 @@ Visualize stock behavior over the **last 30 days** using:
 
 ---
 
-## 🧠 How Prediction Works
+## How Prediction Works
 
 1. Fetch **60 days of stock data** using:
 
@@ -82,7 +82,7 @@ predicted_close <- predict(retrained_model, newdata = tail(latest_opening, 5))
 
 ---
 
-## 🗂️ Libraries Used
+## Libraries Used
 
 ```r
 library(shiny)
@@ -98,7 +98,7 @@ library(lubridate)
 
 ---
 
-## 🔁 Sync Across Tabs
+## Sync Across Tabs
 
 The selected stock symbol in any tab is synced across all tabs using:
 
@@ -113,7 +113,7 @@ observe({
 
 ---
 
-## 🌐 Yahoo Finance Link
+## Yahoo Finance Link
 
 Each stock links directly to Yahoo Finance:
 
@@ -124,7 +124,7 @@ tags$a(href = paste0("https://finance.yahoo.com/quote/", input$symbol),
 
 ---
 
-## 📊 Visualization Preview
+## Visualization Preview
 
 ### Example Boxplot (Last 30 Days)
 
@@ -143,7 +143,7 @@ plot(stock_data_2$timestamp, stock_data_2$Close,
 
 ---
 
-## 💡 Model Strategy
+## Model Strategy
 
 - Linear regression with selected features
 - Only last 30 days used to keep predictions fresh
@@ -151,7 +151,7 @@ plot(stock_data_2$timestamp, stock_data_2$Close,
 
 ---
 
-## 📌 How to Run Locally
+## How to Run Locally
 
 1. Clone the repo  
 2. Place `*.csv` and `*.rds` model files in root  
