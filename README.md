@@ -1,4 +1,4 @@
-# 📈 API-Driven US Stock Market Prediction App
+# API-Driven US Stock Market Prediction App
 
 Live App: [https://sathyav99.shinyapps.io/API_US_stock_prediction/](https://sathyav99.shinyapps.io/API_US_stock_prediction/)
 
