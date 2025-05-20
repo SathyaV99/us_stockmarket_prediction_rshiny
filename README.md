@@ -1,8 +1,10 @@
 # API-Driven US Stock Market Prediction App
 
-Live App: [https://sathyav99.shinyapps.io/API_US_stock_prediction/](https://sathyav99.shinyapps.io/API_US_stock_prediction/)
-
 This Shiny application fetches real-time stock data via **Yahoo Finance API**, performs **feature engineering**, and applies a **linear regression model** to predict the closing price of top US stocks: **AAPL, AMZN, MSFT, GOOGL, and NVDA**.
+
+Check live predictions from just yesterday and the past few days for Apple, Amazon, Microsoft, Google, and Nvidia ([AAPL, AMZN, MSFT, GOOGL, NVDA]).
+
+Live App: [https://sathyav99.shinyapps.io/API_US_stock_prediction/](https://sathyav99.shinyapps.io/API_US_stock_prediction/)
 
 ---
 
